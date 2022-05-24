@@ -2,21 +2,21 @@ import { ITable } from "../interfaces/ITable";
 
 export class Table implements ITable {
 
-    get ZoneNumber(): number {
-        throw new Error("Method not implemented.");
-    }
-    set ZoneNumber(zoneNumber: number) {
-        throw new Error("Method not implemented.");
-    }
+
     //public
 
-    public get number(): number {
+    get number(): number {
         return this._number;
     }
     public set number(v: number) {
         this._number = v;
     }
-
+    get ZoneNumber(): number {
+        return this._zoneNumber;
+    }
+    set ZoneNumber(zoneNumber: number) {
+        this._zoneNumber = zoneNumber;
+    }
     //protected
 
     //private
